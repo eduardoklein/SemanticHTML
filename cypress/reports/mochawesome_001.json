@@ -1,0 +1,577 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 0,
+    "pending": 0,
+    "failures": 6,
+    "start": "2023-01-19T22:01:12.592Z",
+    "end": "2023-01-19T22:01:12.778Z",
+    "duration": 186,
+    "testsRegistered": 19,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 13,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "22f3bcb0-b26b-4491-99f9-26bc533eaa54",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "884bba0b-5273-438c-bcd8-7e9cdf84bb70",
+          "title": "1 - Adicione um cabeçalho na página.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica se existe um cabeçalho na página.",
+              "fullTitle": "1 - Adicione um cabeçalho na página. Verifica se existe um cabeçalho na página.",
+              "timedOut": null,
+              "duration": 43,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('header').should('exist');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - Adicione um cabeçalho n...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - Adicione um cabeçalho n...`\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157791:25\n    at visitFailedByErr (http://localhost:43361/__cypress/runner/cypress_runner.js:157162:12)\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157771:13\n    at tryCatcher (http://localhost:43361/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43361/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:43361/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:43361/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:43361/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:43361/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:43361/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:43361/__cypress/tests?p=cypress/integration/project.spec.js:101:8)",
+                "diff": null
+              },
+              "uuid": "1b13a3b5-4113-4611-bc39-12a9386c4165",
+              "parentUUID": "884bba0b-5273-438c-bcd8-7e9cdf84bb70",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se existe um título dentro do cabeçalho.",
+              "fullTitle": "1 - Adicione um cabeçalho na página. Verifica se existe um título dentro do cabeçalho.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('header h1').should('exist');",
+              "err": {},
+              "uuid": "c26f336e-7132-4abf-8072-b7d2212773a5",
+              "parentUUID": "884bba0b-5273-438c-bcd8-7e9cdf84bb70",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifica se o texto do título é \"Soco a 80km/h: Conheça o Stomatopoda\".",
+              "fullTitle": "1 - Adicione um cabeçalho na página. Verifica se o texto do título é \"Soco a 80km/h: Conheça o Stomatopoda\".",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('header h1').should('have.text', 'Soco a 80km/h: Conheça o Stomatopoda');",
+              "err": {},
+              "uuid": "8a6ca495-f79d-4dfd-9b25-81ae36415e7b",
+              "parentUUID": "884bba0b-5273-438c-bcd8-7e9cdf84bb70",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1b13a3b5-4113-4611-bc39-12a9386c4165"
+          ],
+          "pending": [],
+          "skipped": [
+            "c26f336e-7132-4abf-8072-b7d2212773a5",
+            "8a6ca495-f79d-4dfd-9b25-81ae36415e7b"
+          ],
+          "duration": 43,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "12fc320d-b842-457d-a7f4-493b55bb9a32",
+          "title": "2 - Adicione um conjunto de links que representam a área de navegação do site.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica se existe uma área de navegação no site",
+              "fullTitle": "2 - Adicione um conjunto de links que representam a área de navegação do site. Verifica se existe uma área de navegação no site",
+              "timedOut": null,
+              "duration": 27,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('nav').should('exist');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `2 - Adicione um conjunto de...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `2 - Adicione um conjunto de...`\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157791:25\n    at visitFailedByErr (http://localhost:43361/__cypress/runner/cypress_runner.js:157162:12)\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157771:13\n    at tryCatcher (http://localhost:43361/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43361/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:43361/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:43361/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:43361/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:43361/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:43361/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:43361/__cypress/tests?p=cypress/integration/project.spec.js:115:8)",
+                "diff": null
+              },
+              "uuid": "26c8320c-1fc4-4897-9621-622ff281326f",
+              "parentUUID": "12fc320d-b842-457d-a7f4-493b55bb9a32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se o primeiro link está com o texto \"Página Inicial\".",
+              "fullTitle": "2 - Adicione um conjunto de links que representam a área de navegação do site. Verifica se o primeiro link está com o texto \"Página Inicial\".",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('nav a').eq(0).should('have.text', 'Página Inicial');",
+              "err": {},
+              "uuid": "cf619585-823f-4bcc-942b-94181faee77d",
+              "parentUUID": "12fc320d-b842-457d-a7f4-493b55bb9a32",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifica se o segundo link está com o texto \"Sobre\".",
+              "fullTitle": "2 - Adicione um conjunto de links que representam a área de navegação do site. Verifica se o segundo link está com o texto \"Sobre\".",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('nav a').eq(1).should('have.text', 'Sobre');",
+              "err": {},
+              "uuid": "51bd483a-e22a-40b0-9d55-38a731c98888",
+              "parentUUID": "12fc320d-b842-457d-a7f4-493b55bb9a32",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifica se o terceiro link está com o texto \"Contato\".",
+              "fullTitle": "2 - Adicione um conjunto de links que representam a área de navegação do site. Verifica se o terceiro link está com o texto \"Contato\".",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('nav a').eq(2).should('have.text', 'Contato');",
+              "err": {},
+              "uuid": "d3ea896e-0f98-481d-8c65-49126d96d709",
+              "parentUUID": "12fc320d-b842-457d-a7f4-493b55bb9a32",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "26c8320c-1fc4-4897-9621-622ff281326f"
+          ],
+          "pending": [],
+          "skipped": [
+            "cf619585-823f-4bcc-942b-94181faee77d",
+            "51bd483a-e22a-40b0-9d55-38a731c98888",
+            "d3ea896e-0f98-481d-8c65-49126d96d709"
+          ],
+          "duration": 27,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f41c8eac-b126-41a3-a0d7-46cc74c019ff",
+          "title": "3 - Crie um artigo que vai conter os fatos interessantes sobre o `Stomatopoda`.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica se existe um artigo na página.",
+              "fullTitle": "3 - Crie um artigo que vai conter os fatos interessantes sobre o `Stomatopoda`. Verifica se existe um artigo na página.",
+              "timedOut": null,
+              "duration": 20,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article').should('exist');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - Crie um artigo que vai ...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - Crie um artigo que vai ...`\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157791:25\n    at visitFailedByErr (http://localhost:43361/__cypress/runner/cypress_runner.js:157162:12)\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157771:13\n    at tryCatcher (http://localhost:43361/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43361/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:43361/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:43361/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:43361/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:43361/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:43361/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:43361/__cypress/tests?p=cypress/integration/project.spec.js:132:8)",
+                "diff": null
+              },
+              "uuid": "e1576562-c93f-48bb-8c86-a77d91f9c148",
+              "parentUUID": "f41c8eac-b126-41a3-a0d7-46cc74c019ff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se existe um subtítulo (h2) dentro do artigo.",
+              "fullTitle": "3 - Crie um artigo que vai conter os fatos interessantes sobre o `Stomatopoda`. Verifica se existe um subtítulo (h2) dentro do artigo.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article h2').should('exist');",
+              "err": {},
+              "uuid": "967aaa08-44fa-4801-b955-48b81697ff70",
+              "parentUUID": "f41c8eac-b126-41a3-a0d7-46cc74c019ff",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifica se o texto do subtítulo é \"Fatos sobre o Stomatopoda\".",
+              "fullTitle": "3 - Crie um artigo que vai conter os fatos interessantes sobre o `Stomatopoda`. Verifica se o texto do subtítulo é \"Fatos sobre o Stomatopoda\".",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article h2').should('have.text', 'Fatos sobre o Stomatopoda');",
+              "err": {},
+              "uuid": "b5314acd-d1ab-413e-b075-ce751512d70c",
+              "parentUUID": "f41c8eac-b126-41a3-a0d7-46cc74c019ff",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e1576562-c93f-48bb-8c86-a77d91f9c148"
+          ],
+          "pending": [],
+          "skipped": [
+            "967aaa08-44fa-4801-b955-48b81697ff70",
+            "b5314acd-d1ab-413e-b075-ce751512d70c"
+          ],
+          "duration": 20,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "70da423d-6481-42ff-8cd6-c7cd1d4cb677",
+          "title": "4 - Divida o artigo em seções.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica se existem pelo menos duas seções no artigo",
+              "fullTitle": "4 - Divida o artigo em seções. Verifica se existem pelo menos duas seções no artigo",
+              "timedOut": null,
+              "duration": 26,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article > section').should('have.length.above', 1);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `4 - Divida o artigo em seções.`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `4 - Divida o artigo em seções.`\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157791:25\n    at visitFailedByErr (http://localhost:43361/__cypress/runner/cypress_runner.js:157162:12)\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157771:13\n    at tryCatcher (http://localhost:43361/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43361/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:43361/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:43361/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:43361/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:43361/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:43361/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:43361/__cypress/tests?p=cypress/integration/project.spec.js:146:8)",
+                "diff": null
+              },
+              "uuid": "65c5f730-d26c-42af-8d16-faa1e9d2b256",
+              "parentUUID": "70da423d-6481-42ff-8cd6-c7cd1d4cb677",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se \"Odontodactylus scyllarus\" aparece em itálico na primeira seção",
+              "fullTitle": "4 - Divida o artigo em seções. Verifica se \"Odontodactylus scyllarus\" aparece em itálico na primeira seção",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article > section').eq(0).find('em').should('contain', 'Odontodactylus scyllarus');",
+              "err": {},
+              "uuid": "e9891ad8-519e-46fb-a078-191ed690799a",
+              "parentUUID": "70da423d-6481-42ff-8cd6-c7cd1d4cb677",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifica se existe um subtítulo (h3) para cada seção.",
+              "fullTitle": "4 - Divida o artigo em seções. Verifica se existe um subtítulo (h3) para cada seção.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article > section').each(function (section) {\n  cy.wrap(section.find('h3')).should('exist');\n});",
+              "err": {},
+              "uuid": "6f1efd87-d08c-4473-b973-46644e3b918d",
+              "parentUUID": "70da423d-6481-42ff-8cd6-c7cd1d4cb677",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifica se existe uma imagem para cada seção.",
+              "fullTitle": "4 - Divida o artigo em seções. Verifica se existe uma imagem para cada seção.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article > section').each(function (section, index, collection) {\n  // skipping the first and last sections ('informações gerais' and 'referências bibliográficas')\n  if (index != 0 && index + 1 < collection.length) cy.wrap(section.find('img')).should('exist');\n});",
+              "err": {},
+              "uuid": "081a69e5-5f60-45eb-a0c8-aec6193fc06c",
+              "parentUUID": "70da423d-6481-42ff-8cd6-c7cd1d4cb677",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verifica se a última seção contém links dentro de uma lista não ordenada.",
+              "fullTitle": "4 - Divida o artigo em seções. Verifica se a última seção contém links dentro de uma lista não ordenada.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('article > section').last().find('ul li a').should('exist');",
+              "err": {},
+              "uuid": "be68800e-df62-473c-a755-27a5c228fc79",
+              "parentUUID": "70da423d-6481-42ff-8cd6-c7cd1d4cb677",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "65c5f730-d26c-42af-8d16-faa1e9d2b256"
+          ],
+          "pending": [],
+          "skipped": [
+            "e9891ad8-519e-46fb-a078-191ed690799a",
+            "6f1efd87-d08c-4473-b973-46644e3b918d",
+            "081a69e5-5f60-45eb-a0c8-aec6193fc06c",
+            "be68800e-df62-473c-a755-27a5c228fc79"
+          ],
+          "duration": 26,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4778bb50-b827-46a4-818c-f7dbcf8c0a8a",
+          "title": "5 - Adicione um conteúdo adjacente ao artigo.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica se existe um conteúdo adjacente na página na página.",
+              "fullTitle": "5 - Adicione um conteúdo adjacente ao artigo. Verifica se existe um conteúdo adjacente na página na página.",
+              "timedOut": null,
+              "duration": 18,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('aside').should('exist');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `5 - Adicione um conteúdo ad...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `5 - Adicione um conteúdo ad...`\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157791:25\n    at visitFailedByErr (http://localhost:43361/__cypress/runner/cypress_runner.js:157162:12)\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157771:13\n    at tryCatcher (http://localhost:43361/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43361/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:43361/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:43361/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:43361/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:43361/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:43361/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:43361/__cypress/tests?p=cypress/integration/project.spec.js:171:8)",
+                "diff": null
+              },
+              "uuid": "aebffe7d-87ad-4f3d-9791-3c214739dd89",
+              "parentUUID": "4778bb50-b827-46a4-818c-f7dbcf8c0a8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se existe um link dentro do conteúdo adjacente com o endereço \"https://www.youtube.com/watch?v=E0Li1k5hGBE\".",
+              "fullTitle": "5 - Adicione um conteúdo adjacente ao artigo. Verifica se existe um link dentro do conteúdo adjacente com o endereço \"https://www.youtube.com/watch?v=E0Li1k5hGBE\".",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('aside a').should('have.attr', 'href', 'https://www.youtube.com/watch?v=E0Li1k5hGBE');",
+              "err": {},
+              "uuid": "c743ef70-2368-494d-abe6-2ad9cdb7474d",
+              "parentUUID": "4778bb50-b827-46a4-818c-f7dbcf8c0a8a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "aebffe7d-87ad-4f3d-9791-3c214739dd89"
+          ],
+          "pending": [],
+          "skipped": [
+            "c743ef70-2368-494d-abe6-2ad9cdb7474d"
+          ],
+          "duration": 18,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e67d3406-cc2f-4393-be78-932d2768647f",
+          "title": "6 - Adicione um rodapé na página.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica se existe um rodapé na página.",
+              "fullTitle": "6 - Adicione um rodapé na página. Verifica se existe um rodapé na página.",
+              "timedOut": null,
+              "duration": 22,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('footer').should('exist');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `6 - Adicione um rodapé na p...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/home/eduardo/Documents/Clones/sd-030-a-exercise-semantic-html/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `6 - Adicione um rodapé na p...`\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157791:25\n    at visitFailedByErr (http://localhost:43361/__cypress/runner/cypress_runner.js:157162:12)\n    at http://localhost:43361/__cypress/runner/cypress_runner.js:157771:13\n    at tryCatcher (http://localhost:43361/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43361/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:43361/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:43361/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:43361/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:43361/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:43361/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:43361/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:43361/__cypress/tests?p=cypress/integration/project.spec.js:182:8)",
+                "diff": null
+              },
+              "uuid": "271de34b-50e0-480a-ba92-c7c75f78d28f",
+              "parentUUID": "e67d3406-cc2f-4393-be78-932d2768647f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se existe o texto \"Conteúdo compilado por <insere seu nome>, <ano atual>\". no rodapé da página",
+              "fullTitle": "6 - Adicione um rodapé na página. Verifica se existe o texto \"Conteúdo compilado por <insere seu nome>, <ano atual>\". no rodapé da página",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('footer').contains(/\"Conteúdo compilado por .*, \\d\\d\\d\\d\"\\./);",
+              "err": {},
+              "uuid": "ea08bb5b-4b15-4dbc-a857-a715aa1c62fa",
+              "parentUUID": "e67d3406-cc2f-4393-be78-932d2768647f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "271de34b-50e0-480a-ba92-c7c75f78d28f"
+          ],
+          "pending": [],
+          "skipped": [
+            "ea08bb5b-4b15-4dbc-a857-a715aa1c62fa"
+          ],
+          "duration": 22,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
