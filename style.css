@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 h1 {
@@ -27,4 +28,13 @@ table, tr, td, th {
 
 img {
     padding-top: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.floatRight {
+    float: right;
+    display: inline-block;
 }
