@@ -10,6 +10,7 @@ h1 {
     font-weight: bolder;
 }
 
+
 nav{
     text-align: center;
 }
@@ -32,9 +33,4 @@ img {
 
 footer {
     text-align: center;
-}
-
-.floatRight {
-    float: right;
-    display: inline-block;
 }
